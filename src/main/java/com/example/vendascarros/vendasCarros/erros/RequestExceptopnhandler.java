@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 public class RequestExceptopnhandler {
     @ExceptionHandler(EntityNotFoundException.class)
     public ResponseEntity threat404(){
-        return ResponseEntity.badRequest().body("Dado não encontrado, por favore verifique e envie novamento!");
+        return ResponseEntity.badRequest().body("Dado não encontrado, por favor verifique e envie novamento!");
     }
 }
